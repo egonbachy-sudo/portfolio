@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fr">
-<head>
+<head><script>document.documentElement.setAttribute('data-theme','light');</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Passoire : verse ta journée, ce qui compte reste. Application mobile, wireframes.">
@@ -313,6 +313,27 @@ footer{scroll-snap-align:end}
 .slide.solo .sl-txt{max-width:820px}.slide.solo .sl-txt h3{font-size:clamp(2.2rem,5.5vw,4rem)}.slide.solo .sl-txt h3.big{font-size:clamp(2rem,4.8vw,3.6rem);max-width:18ch}
 .slide.solo .sl-txt p{font-size:1.2rem;max-width:44ch}
 .slide.solo .device{display:none}
+.slide.web{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
+.slide .browser{width:100%;max-height:78svh;opacity:0;transform:translateY(40px) scale(.97);transition:opacity .6s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.slide.on .browser{opacity:1;transform:none}
+.browser .scr img{opacity:1}
+.slide.proto{grid-template-columns:minmax(0,1fr);align-content:center;justify-items:stretch}
+.slide.proto .embed{margin:0}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 0;padding:0;list-style:none}
+.pills li{padding:12px 20px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-family:var(--display);font-weight:600}
+.pills li:first-child{background:var(--accent);color:#fff;border-color:var(--accent)}
+.sw{display:flex;gap:14px;margin-top:26px}.sw i{width:72px;height:72px;border-radius:20px;border:1px solid var(--line)}
+.allp{margin:22px 0 0;text-align:center;max-width:none!important;width:100%}.allp a{color:var(--ink2);font-weight:500}
+.phero.duo{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);column-gap:clamp(24px,4vw,56px);align-content:center;justify-content:stretch}
+.phero.duo>*{grid-column:1}
+.phero.duo h1{font-size:clamp(2.4rem,5vw,4.4rem)}
+.phero.duo .lede{font-size:clamp(1.1rem,1.8vw,1.5rem);max-width:30ch;margin-bottom:0}
+.phero.duo .browser{grid-column:2;grid-row:1/6;align-self:center;width:100%;margin:0}
+@media (max-width:860px){.phero.duo{display:flex}.phero.duo h1{font-size:clamp(2.2rem,10vw,3rem)}.phero.duo .browser{width:min(100%,340px);margin-top:18px}}
+@media (max-width:860px){.slide.solo{padding-top:80px;align-content:center}.slide.solo .sl-txt{text-align:left}.slide.solo .sl-txt h3{font-size:clamp(1.6rem,8vw,2.2rem)}.slide.solo .sl-txt h3.big{font-size:clamp(1.5rem,7vw,2rem)}.slide.solo .sl-txt p{font-size:1rem;margin-inline:0}.rules{margin-top:16px;gap:8px}.rules li{padding:11px 16px}.rules strong{font-size:1.02rem}.rules span{font-size:.9rem}.slide.solo .sl-txt p.mono{margin-top:8px}}
+.phero .facts{margin-top:clamp(20px,3vw,36px)}
+.phero .browser{width:min(100%,560px);margin-top:20px}
+@media (max-width:860px){.slide.web{grid-template-columns:minmax(0,1fr)}.slide .browser{max-height:44svh}.phero .browser{width:min(100%,360px)}}
 .rules{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px}
 .rules li{display:grid;gap:2px;padding:18px 22px;background:var(--surface);border:1px solid var(--line);border-radius:20px}
 .rules strong{font-family:var(--display);font-size:1.25rem}.rules span{color:var(--ink2)}
@@ -340,7 +361,20 @@ footer{scroll-snap-align:end}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-snap-type:none}.sl-txt,.slide .device{opacity:1;transform:none;transition:none}}
 </style>
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"><style>
+:root[data-theme]{--bg:#FDFCF8;--surface:#F4F1E8;--sand:#EDE9DD;--ink:#1E1E1C;--ink2:#5B5B55;--line:#C9C4B6;--accent:#1E1E1C;--accent-hover:#000;--on-accent:#FDFCF8;--accent-soft:#EDE9DD;--display:"Space Mono",ui-monospace,Menlo,monospace;--body:"Space Mono",ui-monospace,Menlo,monospace;--shadow:0 18px 40px -22px rgba(0,0,0,.35);color-scheme:light}
+body{font-size:15px;line-height:1.7}
+h1,h2,h3{letter-spacing:-.05em}
+.phero h1{font-size:clamp(2.6rem,10vw,6.2rem);text-transform:uppercase}
+.phero .lede{font-size:clamp(1rem,2.2vw,1.35rem)}
+.sl-txt h3{font-size:clamp(1.5rem,3.2vw,2.4rem)!important}.slide.solo .sl-txt h3{font-size:clamp(1.7rem,4vw,3rem)!important}.slide.solo .sl-txt h3.big{font-size:clamp(1.6rem,3.6vw,2.7rem)!important}
+.eyebrow,.sl-txt .n,.closing .n,.act small{letter-spacing:.08em}
+.rules li,.act,.btn,.zoom,.pills li{border-radius:4px!important;border-style:dashed}
+.act.main{border-style:solid}
+.sl-txt .mono{background:var(--sand);padding:6px 10px;display:inline-block}
+.device{background:#1E1E1C}
+.closing h2{font-size:clamp(1.8rem,4.4vw,3.2rem)}
+</style><style>#theme{display:none!important}</style></head>
 <body>
 <header class="top">
   <div class="wrap">
