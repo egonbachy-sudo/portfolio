@@ -374,6 +374,27 @@ h1,h2,h3{letter-spacing:-.05em}
 .sl-txt .mono{background:var(--sand);padding:6px 10px;display:inline-block}
 .device{background:#1E1E1C}
 .closing h2{font-size:clamp(1.8rem,4.4vw,3.2rem)}
+@media (max-width:860px){
+.slide{padding-top:64px!important;padding-bottom:14px!important;gap:10px!important}
+.slide:not(.solo) .device{height:min(32svh,330px)!important}
+.slide .browser{max-height:32svh!important;overflow:hidden!important}
+.sl-txt h3{font-size:clamp(1.25rem,5.2vw,1.6rem)!important;line-height:1.12!important;margin:4px 0 6px!important}
+.slide.solo .sl-txt h3,.slide.solo .sl-txt h3.big{font-size:clamp(1.3rem,5.6vw,1.8rem)!important}
+.sl-txt p,.slide.solo .sl-txt p{font-size:.92rem!important;line-height:1.4!important;margin-top:6px!important}
+.sl-txt .n{font-size:.85rem!important}
+.rules{margin-top:10px!important;gap:6px!important}.rules li{padding:8px 13px!important;border-radius:14px!important}
+.rules strong{font-size:.95rem!important}.rules span{font-size:.82rem!important;line-height:1.3}
+.pills{margin-top:12px!important;gap:6px!important}.pills li{padding:7px 13px!important;font-size:.85rem}
+.sw{margin-top:12px!important}.sw i{width:48px!important;height:48px!important;border-radius:14px!important}
+.phero.duo .browser{margin-top:10px!important}
+}
+@media (max-width:860px) and (max-height:700px){
+.slide:not(.solo) .device{height:26svh!important}.slide .browser{max-height:26svh!important;overflow:hidden!important}
+.slide{padding-top:56px!important;gap:8px!important}
+.sl-txt p,.slide.solo .sl-txt p{font-size:.86rem!important;line-height:1.33!important}
+.sl-txt h3,.slide.solo .sl-txt h3,.slide.solo .sl-txt h3.big{font-size:1.2rem!important}
+.rules li{padding:6px 12px!important}.rules span{font-size:.78rem!important}
+}
 </style><style>#theme{display:none!important}</style></head>
 <body>
 <header class="top">
